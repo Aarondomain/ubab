@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakta oss - Ulriksdals Byggnads AB</title>
+    <meta
+      name="description"
+      content="Kontakta Ulriksdals Byggnads AB för alla typer av bygg- och renoveringsprojekt. Vi hjälper dig med allt från små reparationer till stora renoveringar."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-content">
+          <a href="index.html" class="navbar-brand">UBAB</a>
+          <button class="mobile-menu-button">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="navbar-menu">
+            <div class="navbar-links">
+              <a href="index.html" class="nav-link">Hem</a>
+              <div class="dropdown">
+                <a href="tjanster.html" class="nav-link">Tjänster</a>
+                <div class="dropdown-content">
+                  <a href="tjanster-badrum.html" class="dropdown-link"
+                    >Badrumsrenovering</a
+                  >
+                  <a href="tjanster-kok.html" class="dropdown-link"
+                    >Köksrenovering</a
+                  >
+                  <a href="tjanster-renovering.html" class="dropdown-link"
+                    >Villa- och lägenhetsrenovering</a
+                  >
+                </div>
+              </div>
+              <a href="projekt.html" class="nav-link">Projekt</a>
+              <a href="om-oss.html" class="nav-link">Om Oss</a>
+              <a href="kontakt.html" class="nav-link active">Kontakt</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Kontakt Header -->
+    <section class="page-header">
+      <div class="page-header-content">
+        <h1>Kontakta oss</h1>
+        <p>Vi hjälper dig med ditt nästa byggprojekt</p>
+      </div>
+    </section>
+
+    <!-- Kontakt Content -->
+    <section class="section">
+      <div class="section-container contact-grid">
+        <!-- Kontaktinformation -->
+        <div class="contact-info">
+          <div class="info-card">
+            <i class="fas fa-phone info-icon"></i>
+            <h3>Ring oss</h3>
+            <p>Benny W Dahlberg</p>
+            <p>Tel: <strong>08-856138</strong></p>
+            <p>Mobil: <strong>0705-856138</strong></p>
+          </div>
+
+          <div class="info-card">
+            <i class="fas fa-envelope info-icon"></i>
+            <h3>E-post</h3>
+            <p><a href="mailto:ub.ab@telia.com">ub.ab@telia.com</a></p>
+          </div>
+
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt info-icon"></i>
+            <h3>Besök oss</h3>
+            <p>Mäster simons väg 20</p>
+            <p>170 66 Solna</p>
+          </div>
+
+          <div class="info-card">
+            <i class="fas fa-info-circle info-icon"></i>
+            <h3>Företagsinfo</h3>
+            <p>Org.nr: 556396-4294</p>
+            <p>Innehar F-skattebevis</p>
+          </div>
+        </div>
+
+        <!-- Kontaktformulär -->
+        <div class="contact-form">
+          <h2>Skicka en förfrågan</h2>
+          <p class="form-intro">
+            E-posta er förfrågan till oss så ska vi försöka besvara era önskemål
+            inom kort. Beskriv gärna så detaljerat som möjligt vad du behöver
+            hjälp med.
+          </p>
+          <form action="https://formspree.io/f/xbjnkwbj" method="POST">
+            <div class="form-group">
+              <label for="name">Ditt namn *</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="address">Adress</label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Gatuadress"
+              />
+              <input
+                type="text"
+                id="postalcode"
+                name="postalcode"
+                placeholder="Postnummer"
+              />
+              <input type="text" id="city" name="city" placeholder="Stad" />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-postadress *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Ämne *</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Ditt meddelande *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">
+              Skicka meddelande
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="section-container">
+        <div class="footer-grid">
+          <div>
+            <h3 class="footer-title">Kontakta oss</h3>
+            <p>Telefon: 08-856138</p>
+            <p>E-post: ub.ab@telia.com</p>
+            <p>Adress: Mäster simons väg 20, 170 66 Solna</p>
+          </div>
+          <div>
+            <h3 class="footer-title">Snabblänkar</h3>
+            <ul class="footer-links">
+              <li><a href="index.html" class="footer-link">Hem</a></li>
+              <li><a href="tjanster.html" class="footer-link">Tjänster</a></li>
+              <li><a href="projekt.html" class="footer-link">Projekt</a></li>
+              <li><a href="om-oss.html" class="footer-link">Om Oss</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-title">Följ oss</h3>
+            <div class="social-links">
+              <a href="https://www.facebook.com/www.ubab.nu" class="social-link"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Ulriksdals Byggnads AB. Alla rättigheter förbehållna.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.querySelector(".mobile-menu-button");
+        const navbarMenu = document.querySelector(".navbar-menu");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        mobileMenuButton.addEventListener("click", function () {
+          navbarMenu.classList.toggle("active");
+        });
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            navbarMenu.classList.remove("active");
+          });
+        });
+
+        document.addEventListener("click", function (event) {
+          if (!event.target.closest(".navbar-content")) {
+            navbarMenu.classList.remove("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

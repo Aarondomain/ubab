@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Våra Projekt - Ulriksdals Byggnads AB</title>
+    <meta
+      name="description"
+      content="Se våra genomförda byggprojekt och renoveringar. Ulriksdals Byggnads AB levererar högkvalitativa bygg- och renoveringstjänster i Stockholm."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-content">
+          <a href="index.html" class="navbar-brand">UBAB</a>
+          <button class="mobile-menu-button">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="navbar-menu">
+            <div class="navbar-links">
+              <a href="index.html" class="nav-link">Hem</a>
+              <div class="dropdown">
+                <a href="tjanster.html" class="nav-link">Tjänster</a>
+                <div class="dropdown-content">
+                  <a href="tjanster-badrum.html" class="dropdown-link"
+                    >Badrumsrenovering</a
+                  >
+                  <a href="tjanster-kok.html" class="dropdown-link"
+                    >Köksrenovering</a
+                  >
+                  <a href="tjanster-renovering.html" class="dropdown-link"
+                    >Villa- och lägenhetsrenovering</a
+                  >
+                </div>
+              </div>
+              <a href="#" class="nav-link active">Projekt</a>
+              <a href="om-oss.html" class="nav-link">Om Oss</a>
+              <a href="kontakt.html" class="nav-link">Kontakt</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header projekt-header">
+      <div class="page-header-content">
+        <h1>Våra Projekt</h1>
+        <p>Se våra genomförda renoveringar och byggprojekt</p>
+      </div>
+    </section>
+
+    <!-- Projekt Content -->
+    <section class="section">
+      <div class="section-container">
+        <div class="reviews-rating">
+          <h3>Våra kunder ger oss</h3>
+          <div class="rating-container">
+            <img
+              src="images/aajoda-gold-badge-SV.png"
+              alt="Aajoda Certifierad"
+              class="aajoda-badge"
+            />
+            <div class="rating-content">
+              <div class="rating-stars">
+                <img src="images/starfull.svg" alt="5 av 5 stjärnor" />
+              </div>
+              <div class="rating-number">4.92 av 5 i betyg</div>
+              <div class="rating-count">24 Omdömen</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="aajoda_divbde4e544286845fea548" class="aajoda_con"></div>
+        <script src="https://aajoda.com/public/Aajoda_refsv2_1.min.js"></script>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="section-container">
+        <div class="footer-grid">
+          <div>
+            <h3 class="footer-title">Kontakta oss</h3>
+            <p>Telefon: 08-856138</p>
+            <p>Mobil: 0705-856138</p>
+            <p>E-post: ub.ab@telia.com</p>
+            <p>Adress: Mäster simons väg 20, 170 66 Solna</p>
+          </div>
+          <div>
+            <h3 class="footer-title">Snabblänkar</h3>
+            <ul class="footer-links">
+              <li><a href="index.html" class="footer-link">Hem</a></li>
+              <li><a href="tjanster.html" class="footer-link">Tjänster</a></li>
+              <li><a href="projekt.html" class="footer-link">Projekt</a></li>
+              <li><a href="om-oss.html" class="footer-link">Om Oss</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-title">Följ oss</h3>
+            <div class="social-links">
+              <a href="https://www.facebook.com/www.ubab.nu" class="social-link"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Ulriksdals Byggnads AB. Alla rättigheter förbehållna.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.querySelector(".mobile-menu-button");
+        const navbarMenu = document.querySelector(".navbar-menu");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        mobileMenuButton.addEventListener("click", function () {
+          navbarMenu.classList.toggle("active");
+        });
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            navbarMenu.classList.remove("active");
+          });
+        });
+
+        document.addEventListener("click", function (event) {
+          if (!event.target.closest(".navbar-content")) {
+            navbarMenu.classList.remove("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
